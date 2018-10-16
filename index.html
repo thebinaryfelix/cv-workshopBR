@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <title>CURRÍCULO DE 2 HORAS por IRONHACK</title>
+</head>
+
+<body>
+    <header class="text-center">
+        <img src="images/logo.png" alt="Ironhack - Coding School" width="200px" class="m-4">
+        <h1>CURRÍCULO DE 2 HORAS</h1>
+        <p>Introdução ao HTML e CSS pela Ironhack</p>
+    </header>
+    <section id="setup-section" class="container p-0">
+        <div class="m-auto col-md-10 text-center section-title">
+            <h2>1. AMBIENTE</h2>
+        </div>
+        <div class="m-auto col-md-10">
+            <ol>
+                <li>Iniciar o 
+                    <a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code</a>
+                </li>
+                <li>Criar uma pasta com o nome
+                    <code>CV</code> no seu desktop.
+                </li>
+                <li>Arrastar a pasta criada e colocar dentro da janela do VS Code.</li>
+                <li>Agora, dentro do VS Code: Na janela da esquerda</li>
+                <ul>
+                    <li>Clique com o botão direito e então, clique em
+                        <strong>novo arquivo</strong>
+                    </li>
+                    <li>Nomeie ela
+                        <code>index.html</code> e clique
+                        <kbd>Enter</kbd>
+                    </li>
+                    <li>Repita o processo e salve o novo arquivo como
+                        <code>style.css</code>
+                    </li>
+                    <li>Clique com o botão direito e então clique em
+                        <strong>New Folder</strong>
+                    </li>
+                    <li>Nomeie ela como
+                        <code>images</code> e aperte
+                        <kbd>Enter</kbd>
+                    </li>
+                </ul>
+                <li>Abra o seu navegador preferido (Chrome, Safari, Firefox...)</li>
+                <li>Arraste o seu arquivo
+                    <code>index.html</code> para o navegador</li>
+                <li>Estamos prontos!</li>
+            </ol>
+        </div>
+        <div class="m-auto col-md-10">
+            <img src="images/drag-drop.png" alt="Drag & drop folder into VS Code" class="instruction-img">
+            <img src="images/index-browser.png" alt="Blank page opens in browser" class="instruction-img">
+        </div>
+    </section>
+    <section id="content-section" class="container p-0">
+        <div class="m-auto col-md-10 text-center section-title">
+            <h2>2. CONTEÚDO</h2>
+        </div>
+        <div class="m-auto col-md-10">
+            <ol>
+                <li>Vamos fazer um currículo para o Homer Simpson</li>
+                <li>Para usar esta imagem,
+                    <strong>clique nela</strong> e depois de fazer o download da imagem, mova para a sua pasta
+                    <code>images</code>.</li>
+                <a href="images/profile.jpg" download>
+                    <img src="images/profile.jpg" alt="Profile image" width="150px" class="resource-img">
+                </a>
+                <li>Próximo passo, este será o nosso código inicial, dentro do arquivo
+                    <code>index.html</code>:</li>
+
+                <div class="starter-code">
+                    <button class="copy-btn">
+                        <i class="far fa-copy"></i>
+                        <p class="hidden" id="success-msg">Copiado!</p>
+                    </button>
+<xmp id="starter-code">
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Homer J Simpson</title>
+    </head>
+
+    <body>
+        <!-- Block #1 -->
+        <h1>Homer Jay Simpson</h1>
+        <p>Versitile employee, currently working at Springfield's Power Plant</p>
+        <p>This can be a longer description about the person's goals</p>
+
+        <!-- Block #2 -->
+        <img src="images/profile.jpg" alt="">
+
+        <!-- Block #3 -->
+        <ul>
+            <li>homer.simpson@gmail.com</li>
+            <li>Springfield, OR - USA</li>
+            <li>@homersimpson_official</li>
+        </ul>
+        <ul>
+            <li>+1 503-655-2393</li>
+            <li>May 12, 1956</li>
+            <li>linkedin.com/in/homersimpson</li>
+        </ul>
+
+        <!-- Block #4 -->
+        <h2>EDUCATION</h2>
+        <h3>High School Degree</h3>
+        <h4>Springfield High</h4>
+        <p>Start Date - End Date</p>
+        <p>Springfield, USA</p>
+        <p>Course</p>
+        <ul>
+            <li>Completed High School while eating lots of donuts.</li>
+        </ul>
+
+        <!-- Block #5 -->
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Math</li>
+            <li>English</li>
+            <li>Art</li>
+            <li>Biology</li>
+            <li>Chemestry</li>
+            <li>Gardening</li>
+        </ul>
+
+    </body>
+
+    </html>
+</xmp>
+                </div>
+
+                <li>Para cada alteração em seu arquivo
+                    <code>index.html</code> ou
+                    <code>style.css</code>, você deve salvá-lo pressionando
+                    <kbd>CTRL + S</kbd> e recarregando a página com
+                    <kbd>F5</kbd> ou
+                    <kbd>CTRL + R</kbd> para ver o resultado.
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="style-section" class="container p-0">
+        <div class="m-auto col-md-10 text-center section-title">
+            <h2>3. BOOTSTRAP - FONT AWESOME</h2>
+        </div>
+        <div class="m-auto col-md-10">
+            <ol>
+                <li>Copie as seguintes linhas:</li>
+<xmp class="bootstrap-code">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</xmp>
+                <li>
+                    Cole o código que você  acabou de copiar dentro da tag
+                    <code>head</code> em seu arquivo
+                    <code>index.html</code>.
+                </li>
+                <li>Deve ser algo assim:</li>
+<xmp class="bootstrap-code">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+            crossorigin="anonymous">
+            
+        <link rel="stylesheet" href="style.css">
+        <title>Homer J Simpson</title>
+    </head>
+</xmp>
+                <li>
+                    Vamos adicionar alguns ícones FontAwesome ao perfil do Homer e linkar eles!
+                </li>
+<xmp class="bootstrap-code">
+    <!-- Block #3 -->
+    <ul>
+        <li><a href="#"><i class="far fa-envelope"></i>homer.simpson@gmail.com</a></li>
+        <li><a href="#"><i class="fas fa-map-marker-alt"></i>Springfield, OR - USA</a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i>@homersimpson_official</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="#"><i class="fas fa-mobile-alt"></i>+1 503-655-2393</a></li>
+        <li><a href="#"><i class="far fa-calendar-alt"></i>May 12, 1956</a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i>linkedin.com/in/homersimpson</a></li>
+    </ul>
+</xmp>
+                <li>Você pode navegar para obter outros ícones aqui: <a href="https://fontawesome.com/icons?d=gallery" target="_blank">FontAwesome - Icons</a></li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="wrap-section" class="container p-0">
+        <div class="m-auto col-md-10 text-center section-title">
+            <h2>4. Envolvendo os blocos</h2>
+        </div>
+        <div class="m-auto col-md-10">
+            <ol>
+                <li>Integre cada um dos blocos com a tag
+                    <code>div</code></li>
+<xmp class="bootstrap-code">
+    <div>
+        <div>
+            <!-- Block #1 -->
+            <h1>Homer Jay Simpson</h1>
+            <p>Versitile employee, currently working at Springfield's Power Plant</p>
+            <p>This can be a longer description about the person's goals</p>
+        </div>
+    
+        <div>
+            <!-- Block #2 -->
+            <img src="images/profile.jpg" alt="">
+        </div>
+    
+        <div>
+            <!-- Block #3 -->
+                <ul>
+                    [ ... ]
+                </ul>
+                <ul>
+                    [ ... ]
+                </ul>
+        </div>
+    </div>
+
+    <div>
+        <!-- Block #4 -->
+        <h2>EDUCATION</h2>
+        <h3>High School Degree</h3>
+        <h4>Springfield High</h4>
+        <p>Start Date - End Date</p>
+        <p>Springfield, USA</p>
+        <p>Course</p>
+        <ul>
+            <li>Completed High School while eating lots of donuts.</li>
+        </ul>
+    </div>
+
+    <div>
+        <!-- Block #5 -->
+        <h2>SKILLS</h2>
+        <ul>
+            <li>Math</li>
+            <li>English</li>
+            <li>Art</li>
+            <li>Biology</li>
+            <li>Chemestry</li>
+            <li>Gardening</li>
+        </ul>
+    </div>
+</xmp>
+            </ol>
+        </div>
+    </section>
+
+    <section id="tag-section" class="container p-0">
+        <div class="m-auto col-md-10 text-center section-title">
+            <h2>5. Tags de nomeação - Classes do Bootstrap</h2>
+        </div>
+        <div class="m-auto col-md-10 pt-3">
+            <p>O Bootstrap tem classificações especiais para o <a href="https://getbootstrap.com/docs/4.1/layout/grid/" target="_blank">Grid system</a>. Vamos usar algumas delas agora.</p>
+            <ul class="mt-3">
+                <li>Para <strong>block#1</strong>, aplique as <strong>classes</strong> na tag <code>div</code>: <code>block-1 col-lg-8</code></li>
+                <li>Para a primeira tag <code>p</code> em <strong>block#1</strong>, aplique a classe <code>high-text</code></li>
+                <li>Para o <strong>block#2</strong>, aplique as seguintes <strong>classes</strong> à tag <code>div</code>: <code>block-2 col-md-4</code></li>
+                <li>Para o <strong>block#3</strong>, aplique as seguintes <strong>classes</strong> na tag <code>div</code>: <code>block-3 col-md-8</code></li>
+                <li>Para o <strong>block#4</strong>, aplique na tag <code>div</code>: <code>block-4 col-lg-6</code></li>
+                <li>Para <strong>block#5</strong>, na <code>div</code>, aplique as seguintes <strong>classes</strong>: <code>block-5 col-lg-6</code></li>
+            </ul>
+            <p>Próximo passo, vamos integrar mais um pouco...</p>
+            <ol>
+                <li>Integre os blocks #1, #2, #3 dentro de uma <code>div</code> aplique as classes seguintes à ele: <code>row row-1</code></li>
+                <li>Integre os #4 and #5 dentro de uma <code>div</code> e aplique as seguintes classes: <code>row m-0 mt-4</code></li>
+                <li>Finalmente, integre todos os códigos dentro do <code>body</code> com uma <code>div</code> e aplique a classe <code>container</code></li>
+            </ol>
+        </div>
+    </section>
+
+        <section id="css-section" class="container p-0">
+            <div class="m-auto col-md-10 text-center section-title">
+                <h2>6. O CSS</h2>
+            </div>
+            <div class="m-auto col-md-10 pt-3">
+                <p>Dentro do seu arquivo <code>style.css</code>, copie e cole este código:</p>
+<xmp>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,900');
+
+    body{
+        font-family: 'Roboto-Mono', monospace;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        -webkit-print-color-adjust:exact;
+    }
+    
+    h1{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-size: 2.0em;
+        color: #EC3A35;
+    }
+    
+    h3{
+        font-size: 1.6em;
+    }
+    
+    h4{
+        font-size: 1.3em;
+    }
+    
+    .high-text{
+        color: #2DC5FA;
+        font-weight: bold;
+    }
+    
+    .row-1{
+        background-color: #181B23;
+    }
+    
+    .block-1{
+        color: #ffffff;
+        padding: 15px;
+    }
+    
+    .block-2{
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .block-2 img{
+        width: 75%;
+        border: 6px solid #2DC5FA;
+        border-radius: 50%;
+        padding: 10px;
+        background-color: #ffffff;
+    }
+    
+    .block-3 div{
+        display: inline-block;
+        padding: 0;
+    }
+    
+    .block-3 li{
+        list-style-type: none;
+        line-height: 2.0em;
+    }
+    
+    .block-3 i{
+        margin-right: 10px;
+    }
+    
+    .block-3 a{
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .block-5 li{
+        list-style-type: none;
+        display: inline;
+        line-height: 3.0em;
+        border: 2px solid #EC3A35;
+        border-radius: 5px;
+        padding: 5px 10px 5px 10px;
+    }
+    
+    .block-5 li:hover{
+        background-color: #181B23;
+        color: #ffffff;
+        border: 2px solid #2DC5FA;
+    }
+</xmp>
+            </div>
+        </section>
+
+        <section id="deploy-section" class="container p-0">
+            <div class="m-auto col-md-10 text-center section-title">
+                <h2>7. Deploy! <i class="fas fa-rocket"></i></h2>
+            </div>
+            <div class="m-auto col-md-10 pt-3">
+                <h4 class="text-center">É hora de colocar o currículo online!</h4>
+                <ol>
+                    <li>Crie uma pasta no google drive e <strong>compartilhe-a</strong></li>
+                    <img src="images/drive-hosting.png" alt="Hosting on Google Drive" class="instruction-img">
+                    <li>Selecione a opção "qualquer um na internet <strong>pode achar e ver</strong>"</li>
+                    <img src="images/share-cv.png" alt="Share CV" class="instruction-img">
+                    <li>Acesse <a href="http://drv.tw" target="_blank">DriveToWeb</a> e escolha a opção <strong>Google Drive</strong></li>
+                    <img src="images/drvtw.png" alt="DriveToWeb" class="instruction-img">
+                    <li>Faça o login com a sua conta e permita o acesso aos seus arquivos (caso se sinta desconfortável com isso, crie uma conta Gmail apenas para armazenar seus arquivos públicos)</li>
+                    <li>Já está online! No painel de administração, selecione o link que corresponde ao seu CV e é isso. :) </li>
+                    <img src="images/admin-panel-drvtw.png" alt="Admin Panel" class="instruction-img">
+                </ol>
+            </div>
+        </section>
+
+        <hr>
+        <footer class="pb-3 pt-2">
+            <p class="text-center">Happy Coding!</p>
+        </footer>
+
+    <script>
+        let copyBtn = document.querySelector('.copy-btn');
+        copyBtn.addEventListener('click', function (event) {
+            // Select the email link anchor text  
+            let starterCode = document.querySelector('#starter-code');
+            let range = document.createRange();
+            range.selectNode(starterCode);
+            window.getSelection().addRange(range);
+
+            try {
+                let successful = document.execCommand('copy');
+                let msg = successful ? 'successful' : 'unsuccessful';
+                console.log('Copy email command was ' + msg);
+                if (msg == 'successful') {
+                    let successMsg = document.getElementById("success-msg");
+                    successMsg.classList.remove("hidden");
+                    setTimeout(() => {
+                        successMsg = document.getElementById("success-msg");
+                        successMsg.classList.add("hidden");
+                    }, 3000)
+                } else {
+                    let successMsg = document.getElementById("success-msg");
+                    successMsg.classList.add("hidden");
+                }
+            } catch (err) {
+                console.log('Oops, unable to copy');
+            }
+            window.getSelection().removeAllRanges();
+        });
+    </script>
+</body>
+
+</html>

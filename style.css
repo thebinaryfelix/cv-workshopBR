@@ -1,0 +1,125 @@
+/* 
+    Electric blue:............#2DC5FA
+    Dark blue:................#2D354C
+    Soft black:...............#181B23
+    Ruby:.....................#EC3A35
+    Orange:...................#F78F32
+    Soft yellow:..............#FFD26F
+    Deep blue:................#008B9C
+    Soft green:...............#72C0BC
+    Soft red:.................#F67373
+    Grey:.....................#6E737C
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i,900');
+.btest {
+    border: 1px solid red;
+}
+
+.hidden {
+    display: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto-Mono', monospace;
+}
+
+ol {
+    margin-top: 15px;
+}
+
+li {
+    line-height: 1.9em;
+}
+
+code {
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+textarea {
+    font-size: 0.7em;
+}
+
+section {
+    font-family: 'Roboto-Mono', monospace;
+    margin-top: 20px;
+}
+
+section li {
+    margin-bottom: 0.8rem;
+}
+
+.section-title {
+    background-color: #2DC5FA;
+    border-radius: 8px;
+    padding: 3px;
+    color: #2D354C;
+}
+
+.instruction-img {
+    width: 80%;
+    margin-bottom: 10px;
+    border: 5px solid #2DC5FA;
+}
+
+.resource-img {
+    border: 3px solid #6E737C;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.resource-img:hover {
+    border: 3px solid #2DC5FA;
+    box-shadow: 7px 7px 30px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 7px 7px 30px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 7px 30px -7px rgba(0, 0, 0, 0.75);
+}
+
+.copy-btn {
+    background-color: #ffffff;
+    border: 3px solid rgb(231, 231, 231);
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    float: right;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    border: 3px solid #2DC5FA;
+}
+
+.starter-code {
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+xmp{
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: scroll;
+}
+
+.copy-btn:focus {
+    outline: 0;
+}
+
+.bootstrap-code {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    overflow: scroll;
+}
